@@ -53,7 +53,7 @@ public class AddActivity extends AppCompatActivity {
                     noteTitle.setError("Title Can not be Blank.");
                 }
                 break;
-            case R.id.delete:
+            case R.id.cancel:
                 Toast.makeText(this, "Canceled", Toast.LENGTH_SHORT).show();
                 onBackPressed();
                 break;

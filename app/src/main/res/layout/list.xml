@@ -9,7 +9,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#eed5b7"
+        app:cardBackgroundColor="#BBC3F1"
         card_view:cardCornerRadius="5dp"
         card_view:cardElevation="5dp"
         card_view:cardUseCompatPadding="true"
@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Description"
                 android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:textSize="15dp" />
             <TextView
                 android:id="@+id/listId"
                 android:layout_width="wrap_content"

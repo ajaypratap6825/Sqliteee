@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setBackgroundColor(Color.parseColor("#ffffff"));
         setSupportActionBar(toolbar);
 
+
         helper = new DatabaseHelper(this);
         List<Data> allNotes = helper.getAllNotes();
         recyclerView = findViewById(R.id.rv);
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Add New Note", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(MainActivity.this,AddActivity.class);
                 startActivity(i);
+                finish();
             }
         });
 

@@ -48,8 +48,7 @@ long id;
                 goToMain();
             }
         });
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+
 
     }
 
@@ -65,15 +64,12 @@ long id;
             Intent i = new Intent(this,EditActivity.class);
             i.putExtra("ID",id);
             startActivity(i);
-
+            finish();
         }
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-    }
+
 
     private void goToMain() {
         Intent i = new Intent(this,MainActivity.class);
