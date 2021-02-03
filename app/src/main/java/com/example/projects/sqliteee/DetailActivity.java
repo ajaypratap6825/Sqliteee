@@ -74,5 +74,6 @@ long id;
     private void goToMain() {
         Intent i = new Intent(this,MainActivity.class);
         startActivity(i);
+        finish();
     }
 }

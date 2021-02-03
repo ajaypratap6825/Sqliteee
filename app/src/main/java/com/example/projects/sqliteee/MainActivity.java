@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Add New Note", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(MainActivity.this,AddActivity.class);
                 startActivity(i);
-                finish();
             }
         });
 
