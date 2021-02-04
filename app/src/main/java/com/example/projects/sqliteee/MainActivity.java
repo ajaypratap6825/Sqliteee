@@ -63,4 +63,10 @@ public class MainActivity extends AppCompatActivity {
         List<Data> getAllNotes = helper.getAllNotes();
             displayList(getAllNotes);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
 }

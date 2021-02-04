@@ -29,7 +29,13 @@ public class EditActivity extends AppCompatActivity {
         toolbar.setBackgroundColor(Color.parseColor("#ffffff"));
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                finish();
+            }
+        });
 
         Intent i = getIntent();
         nId = i.getLongExtra("ID",0);
@@ -60,7 +66,7 @@ public class EditActivity extends AppCompatActivity {
             Log.d("EDITED", "EDIT: id " + id);
             goToMain();
             Toast.makeText(this, "Note Edited.", Toast.LENGTH_SHORT).show();
-        }else if(item.getItemId() == R.id.delete){
+        }else if(item.getItemId() == R.id.cancel){
             Toast.makeText(this, "Canceled", Toast.LENGTH_SHORT).show();
             onBackPressed();
         }
