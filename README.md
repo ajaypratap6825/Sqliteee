@@ -1,5 +1,5 @@
 # Sqliteee
-This is a Notes taking app using Java language. I have used the SQLite database with RecyclerView for storing notes in the user's device in which the user can add title and 
+It is a Notes taking app using Java language. I have used the SQLite database with RecyclerView for storing notes in the user's device in which the user can add title and 
 description. The user can also edit and delete note.
 
 ![Screenshot_20210203-181427](https://user-images.githubusercontent.com/71218027/106749801-01952a80-664d-11eb-9032-0f43ddcf0427.jpg)
